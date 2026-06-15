@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff8f0;
+    color: #3A2415;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #fadadd,
+        #ffeef2
+    );
+
+    text-align: center;
+
+    padding: 120px 20px;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #5C3A21;
+
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    font-size: 1.4rem;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    line-height: 2;
+
+    color: #6b584c;
+}
+
+.hero button {
+    background: #f4b6c2;
+    color: #3A2415;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+/* SEÇÕES */
+
+.pets,
+.depoimentos {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+.pets h2,
+.depoimentos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+
+    color: #5C3A21;
+
+    font-size: 2.3rem;
+}
+
+/* GRID */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 20px 5px;
+
+    color: #5C3A21;
+}
+
+.card p {
+    padding: 0 20px 10px;
+}
+
+.card button {
+    width: calc(100% - 40px);
+
+    margin: 10px 20px 20px;
+
+    border: none;
+
+    background: #f4b6c2;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+/* DEPOIMENTOS */
+
+.depoimento {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+.depoimento h3 {
+    color:#5C3A21;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+
+    background: #fadadd;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #3A2415;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,.05);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h2 {
+    color: #5C3A21;
+}
+
+.navbar div {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3A2415;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #f4b6c2;
+}
+
+/* COMO FUNCIONA */
+
+.how {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.how h2 {
+    color: #5C3A21;
+    margin-bottom: 40px;
+    font-size: 2.3rem;
+}
+
+.steps {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.steps div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.08);
+}
+
+.steps h3 {
+    margin: 15px 0;
+    color: #5C3A21;
+}
+
+/* BENEFÍCIOS */
+
+.benefits {
+    background: #fff0f3;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.benefits h2 {
+    color: #5C3A21;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.benefits-grid div {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.card button:hover {
+    background: #eca5b5;
+}
+
+.card img {
+    transition: .3s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+/* BANNER PÁGINA PETS */
+
+.pets-banner {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f3,
+        #ffe7ec
+    );
+
+    margin-bottom: 40px;
+}
+
+.pets-banner h1 {
+    color: #5C3A21;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 20px;
+}
+
+.pets-banner p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #6b584c;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+}
